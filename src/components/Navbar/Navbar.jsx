@@ -21,15 +21,8 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    const token = User?.token;
-    if (token) {
-      const decodedToken = decode(token);
-      if (decodedToken.exp * 1000 < new Date().getTime()) {
-        handleLogout();
-      }
-    }
     dispatch(setCurrentUser(JSON.parse(localStorage.getItem("Profile"))));
-  }, [User?.token, dispatch]);
+  }, [dispatch]);
   
   return (
     <nav className='main-nav'>
