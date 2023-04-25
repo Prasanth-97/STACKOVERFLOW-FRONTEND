@@ -35,7 +35,7 @@ const Navbar = () => {
           <Link to="/" className='nav-item nav-btn'>For teams</Link>
           <form>
             <input type='text' placeholder='search...'/>
-            <img src={search} alt="search" width="15" className='search-icon' />
+            <img src={search} alt="search" width="18" className='search-icon' />
           </form>
          {User === null ? 
          <Link to="/Auth" className='nav-item nav-links'>Login</Link>:
