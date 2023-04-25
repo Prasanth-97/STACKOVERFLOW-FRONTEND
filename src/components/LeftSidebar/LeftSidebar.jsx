@@ -16,12 +16,6 @@ const LeftSidebar = () => {
                 <img src={Globe} alt="globe" />
                 <p style={{paddingLeft:"10px"}}>Questions</p>
             </NavLink>
-            <NavLink to="/Tags" className="side-nav-links" activeClassName="active" style={{paddingLeft:"40px"}}>
-              <p>Tags</p>
-            </NavLink>
-            <NavLink to="/Tags" className="side-nav-links" activeClassName="active" style={{paddingLeft:"40px"}}>
-              <p>Users</p>
-            </NavLink>
           </div>
         </nav>
     </div>

@@ -13,7 +13,7 @@ const DisplayAnswer = ({question, handleShare}) => {
            <div className="question-actions-user">
              <div>
                 <button type="button" onClick={handleShare}>Share</button>
-                <button type="button">Delete</button>
+                {/* <button type="button">Delete</button> */}
              </div>
              <div>
              <p>answered {moment(ans.answeredOn).fromNow()}</p>

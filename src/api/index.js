@@ -15,3 +15,6 @@ export const postAnswer = (id, noOfAnswers, answerBody, userAnswered) =>
   API.patch(`/answer/post/${id}`, { noOfAnswers, answerBody, userAnswered });
 
 export const deleteQuestion = (id) => API.delete(`/questions/delete/${id}`);
+
+export const voteQuestion = (id, value,userId) =>
+  API.patch(`/questions/vote/${id}`, { value ,userId});

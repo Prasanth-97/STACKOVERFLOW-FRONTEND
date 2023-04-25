@@ -36,6 +36,15 @@ export const askQuestion = (questionData, navigate) => async (dispatch) => {
     }
   };
 
+  export const voteQuestion = (id, value,userId) => async (dispatch) => {
+    try {
+       await api.voteQuestion(id, value,userId);
+      dispatch(fetchAllQuestions());
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   export const deleteQuestion = (id, navigate) => async (dispatch) => {
     try {
       await api.deleteQuestion(id);
@@ -45,3 +54,4 @@ export const askQuestion = (questionData, navigate) => async (dispatch) => {
       console.log(error);
     }
   };
+

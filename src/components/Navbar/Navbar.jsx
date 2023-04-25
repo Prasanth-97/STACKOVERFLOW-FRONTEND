@@ -34,7 +34,7 @@ const Navbar = () => {
           <Link to="/" className='nav-item nav-btn'>Products</Link>
           <Link to="/" className='nav-item nav-btn'>For teams</Link>
           <form>
-            <input type='text' placeholder='search...'/>
+            <input type='text' placeholder='search...' width="4" />
             <img src={search} alt="search" width="18" className='search-icon' />
           </form>
          {User === null ? 
